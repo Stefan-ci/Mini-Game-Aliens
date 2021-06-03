@@ -15,6 +15,8 @@ class Comet(pygame.sprite.Sprite):
 
 		self.comet_event = comet_event
 
+
+
 	def remove(self):
 		self.comet_event.all_comets.remove(self)
 

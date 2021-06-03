@@ -31,7 +31,8 @@ class Game:
 
 	def add_score(self, score_points=10):
 		self.score += score_points
-		
+
+
 
 	def start(self):
 		self.is_playing = True

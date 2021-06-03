@@ -11,7 +11,7 @@ class Player(AnimateSprite):
 		self.health = 150
 		self.max_health = 150
 		# Puissance d'attaque
-		self.attack = 30
+		self.attack = 20
 		# Vitesse de deplacement du joueur
 		self.velocity = 5
 		# Redimmensionner l'image du joueur
