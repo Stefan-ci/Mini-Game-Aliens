@@ -30,7 +30,7 @@ class Monster(AnimateSprite):
 		self.game = game
 		self.health = 100
 		self.max_health = 100
-		self.attack = 0.1
+		self.attack = 0.2
 		self.image = pygame.transform.scale(self.image, (130, 130))
 		self.rect =  self.image.get_rect()
 		self.rect.x = 700 +  random.randint(0, 200)
@@ -42,7 +42,7 @@ class Monster(AnimateSprite):
 
 	def set_speed(self, speed):
 		self.default_speed = speed
-		self.velocity = random.randint(1, self.default_speed)
+		self.velocity = random.randint(3, self.default_speed)
 
 
 	def set_loot_amount(self, amount):
@@ -125,7 +125,7 @@ class Mummy(Monster):
 
 	def __init__(self, game):
 		super().__init__(game, 'mummy', (130, 130))
-		self.set_speed(3)
+		self.set_speed(8)
 		self.set_loot_amount(20)
 
 
@@ -138,6 +138,6 @@ class Alien(Monster):
 		self.health = 200
 		self.max_health = 200
 		self.attack = 0.5
-		self.set_speed(1)
+		self.set_speed(6)
 		self.set_loot_amount(40)
 

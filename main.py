@@ -7,7 +7,7 @@ pygame.init()
 
 # Définir une clock pour optimiser la vitesse du jeu
 clock =   pygame.time.Clock()
-FPS = 80 # Une constante (en majuscule)
+FPS = 100 # Une constante (en majuscule)
 
 
 # Générer la fenêtre de jeu
